@@ -1,0 +1,344 @@
+@import "tailwindcss";
+@import "@fontsource-variable/figtree";
+@import "@fontsource-variable/bricolage-grotesque/opsz.css";
+
+/*
+ * Gafit design tokens.
+ * Category-standard fitness app (dark-first, rounded, one vibrant accent) re-tuned warm and feminine:
+ * a plum-night ground, rose as the single action color, lilac for information, peach/mint for states.
+ * Components consume these only through the Tailwind theme below; never raw hex in components.
+ * Theme: dark by default; <html data-theme="light"> or data-theme="system" (follows the OS).
+ */
+:root {
+  color-scheme: dark;
+  --bg: #16101a;
+  --bg-elev: #1c1520;
+  --surface: #221a28;
+  --surface-2: #2c2233;
+  --surface-3: #372b40;
+  --line: rgb(255 236 246 / 0.08);
+  --line-strong: rgb(255 236 246 / 0.16);
+  --text: #f8eef4;
+  --text-2: #c9b6c4;
+  --text-3: #a08d9c;
+  --rose: #ff8fb1;
+  --rose-strong: #ff6f9c;
+  --rose-ink: #3a0a1e;
+  --rose-soft: rgb(255 143 177 / 0.14);
+  --rose-line: rgb(255 143 177 / 0.35);
+  --lilac: #c6aaff;
+  --lilac-soft: rgb(198 170 255 / 0.14);
+  --peach: #ffb38a;
+  --peach-soft: rgb(255 179 138 / 0.15);
+  --mint: #7fe0b8;
+  --mint-soft: rgb(127 224 184 / 0.14);
+  --mint-ink: #062c1e;
+  --danger-ink: #ffffff;
+  --water: #8fc8ff;
+  --water-soft: rgb(143 200 255 / 0.14);
+  --danger: #ff7a7a;
+  --danger-soft: rgb(255 122 122 / 0.14);
+  --day-1: #ff8fb1;
+  --day-2: #c6aaff;
+  --day-3: #ffb38a;
+  --day-4: #7fe0b8;
+  --day-5: #8fc8ff;
+  --day-6: #f3d77a;
+  --thumb: #eadde5;
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 16px rgb(0 0 0 / 0.18);
+  --shadow-2: 0 8px 28px rgb(0 0 0 / 0.45), 0 2px 6px rgb(0 0 0 / 0.3);
+  --shadow-rose: 0 6px 22px rgb(255 111 156 / 0.32);
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --nav-h: 68px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #fff6f9;
+  --bg-elev: #fffafc;
+  --surface: #ffffff;
+  --surface-2: #fbeef4;
+  --surface-3: #f4e1ea;
+  --line: rgb(74 27 52 / 0.09);
+  --line-strong: rgb(74 27 52 / 0.18);
+  --text: #2b1b26;
+  --text-2: #5e4757;
+  --text-3: #806878;
+  --rose: #d23a6a;
+  --rose-strong: #bf2d5b;
+  --rose-ink: #ffffff;
+  --rose-soft: rgb(214 65 111 / 0.1);
+  --rose-line: rgb(214 65 111 / 0.35);
+  --lilac: #6c4bd1;
+  --lilac-soft: rgb(115 83 214 / 0.1);
+  --peach: #b9551f;
+  --peach-soft: rgb(229 120 64 / 0.13);
+  --mint: #12805a;
+  --mint-soft: rgb(23 137 95 / 0.1);
+  --mint-ink: #ffffff;
+  --danger-ink: #ffffff;
+  --water: #1f6fbf;
+  --water-soft: rgb(31 111 191 / 0.1);
+  --danger: #c23434;
+  --danger-soft: rgb(201 56 56 / 0.1);
+  --day-1: #d23a6a;
+  --day-2: #6c4bd1;
+  --day-3: #c4602b;
+  --day-4: #12805a;
+  --day-5: #2d7fcf;
+  --day-6: #a07c0a;
+  --thumb: #ffffff;
+  --shadow-1: 0 1px 2px rgb(74 27 52 / 0.06), 0 4px 14px rgb(74 27 52 / 0.06);
+  --shadow-2: 0 10px 30px rgb(74 27 52 / 0.14), 0 2px 6px rgb(74 27 52 / 0.08);
+  --shadow-rose: 0 6px 20px rgb(214 65 111 / 0.28);
+}
+
+@media (prefers-color-scheme: light) {
+  :root[data-theme="system"] {
+    color-scheme: light;
+    --bg: #fff6f9;
+    --bg-elev: #fffafc;
+    --surface: #ffffff;
+    --surface-2: #fbeef4;
+    --surface-3: #f4e1ea;
+    --line: rgb(74 27 52 / 0.09);
+    --line-strong: rgb(74 27 52 / 0.18);
+    --text: #2b1b26;
+    --text-2: #5e4757;
+    --text-3: #806878;
+    --rose: #d23a6a;
+    --rose-strong: #bf2d5b;
+    --rose-ink: #ffffff;
+    --rose-soft: rgb(214 65 111 / 0.1);
+    --rose-line: rgb(214 65 111 / 0.35);
+    --lilac: #6c4bd1;
+    --lilac-soft: rgb(115 83 214 / 0.1);
+    --peach: #b9551f;
+    --peach-soft: rgb(229 120 64 / 0.13);
+    --mint: #12805a;
+    --mint-soft: rgb(23 137 95 / 0.1);
+  --mint-ink: #ffffff;
+  --danger-ink: #ffffff;
+  --water: #1f6fbf;
+  --water-soft: rgb(31 111 191 / 0.1);
+    --danger: #c23434;
+    --danger-soft: rgb(201 56 56 / 0.1);
+    --day-1: #d23a6a;
+    --day-2: #6c4bd1;
+    --day-3: #c4602b;
+    --day-4: #12805a;
+    --day-5: #2d7fcf;
+    --day-6: #a07c0a;
+  --thumb: #ffffff;
+    --shadow-1: 0 1px 2px rgb(74 27 52 / 0.06), 0 4px 14px rgb(74 27 52 / 0.06);
+    --shadow-2: 0 10px 30px rgb(74 27 52 / 0.14), 0 2px 6px rgb(74 27 52 / 0.08);
+    --shadow-rose: 0 6px 20px rgb(214 65 111 / 0.28);
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elev: var(--bg-elev);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-text: var(--text);
+  --color-text-2: var(--text-2);
+  --color-text-3: var(--text-3);
+  --color-rose: var(--rose);
+  --color-rose-strong: var(--rose-strong);
+  --color-rose-ink: var(--rose-ink);
+  --color-rose-soft: var(--rose-soft);
+  --color-rose-line: var(--rose-line);
+  --color-lilac: var(--lilac);
+  --color-lilac-soft: var(--lilac-soft);
+  --color-peach: var(--peach);
+  --color-peach-soft: var(--peach-soft);
+  --color-mint: var(--mint);
+  --color-mint-soft: var(--mint-soft);
+  --color-mint-ink: var(--mint-ink);
+  --color-danger-ink: var(--danger-ink);
+  --color-water: var(--water);
+  --color-water-soft: var(--water-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-thumb: var(--thumb);
+
+  --font-sans: "Figtree Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque Variable", "Figtree Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-xs: var(--radius-xs);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+
+  --shadow-1: var(--shadow-1);
+  --shadow-2: var(--shadow-2);
+  --shadow-rose: var(--shadow-rose);
+
+  /* Fixed rem type scale (~1.2 ratio) */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.05rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.3rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg: 1.1875rem;
+  --text-lg--line-height: 1.6rem;
+  --text-xl: 1.4375rem;
+  --text-xl--line-height: 1.85rem;
+  --text-2xl: 1.75rem;
+  --text-2xl--line-height: 2.1rem;
+  --text-3xl: 2.25rem;
+  --text-3xl--line-height: 2.5rem;
+  --text-4xl: 3rem;
+  --text-4xl--line-height: 3.1rem;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background: var(--bg);
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior-y: none;
+  }
+  ::selection {
+    background: var(--rose);
+    color: var(--rose-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--rose);
+    outline-offset: 2px;
+  }
+  input,
+  textarea,
+  select {
+    caret-color: var(--rose);
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--text-3);
+    opacity: 1;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 48;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--surface-3) transparent;
+  }
+  dialog::backdrop {
+    background: rgb(12 6 14 / 0.62);
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  .font-display {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 72;
+  }
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Motion: state changes only, fast; gone under reduced motion. */
+@keyframes gf-pop {
+  0% {
+    transform: scale(0.82);
+  }
+  55% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes gf-rise {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes gf-sheet {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes gf-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+.anim-pop {
+  animation: gf-pop 280ms var(--ease-out);
+}
+.anim-rise {
+  animation: gf-rise 220ms var(--ease-out) both;
+}
+.anim-sheet {
+  animation: gf-sheet 280ms var(--ease-out);
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--surface) 25%, var(--surface-2) 50%, var(--surface) 75%);
+  background-size: 200% 100%;
+  animation: gf-shimmer 1.4s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}

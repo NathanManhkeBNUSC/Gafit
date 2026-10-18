@@ -1,0 +1,629 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T20:07:46.748538+00:00",
+  "title": "Design System: Gafit",
+  "extensions": {
+    "colorMeta": {
+      "plum-night": {
+        "role": "neutral",
+        "displayName": "Noite Ameixa",
+        "canonical": "oklch(18.6% 0.022 311)",
+        "tonalRamp": [
+          "oklch(15% 0.03 311)",
+          "oklch(26% 0.03 311)",
+          "oklch(37% 0.03 311)",
+          "oklch(48% 0.03 311)",
+          "oklch(60% 0.03 311)",
+          "oklch(72% 0.03 311)",
+          "oklch(84% 0.03 311)",
+          "oklch(95% 0.03 311)"
+        ],
+        "lightTheme": "#fff6f9"
+      },
+      "plum-night-elev": {
+        "role": "neutral",
+        "displayName": "Noite Elevada",
+        "canonical": "oklch(21.0% 0.024 313)",
+        "tonalRamp": [
+          "oklch(15% 0.03 313)",
+          "oklch(26% 0.03 313)",
+          "oklch(37% 0.03 313)",
+          "oklch(48% 0.03 313)",
+          "oklch(60% 0.03 313)",
+          "oklch(72% 0.03 313)",
+          "oklch(84% 0.03 313)",
+          "oklch(95% 0.03 313)"
+        ],
+        "lightTheme": "#fffafc"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Superfície",
+        "canonical": "oklch(23.4% 0.029 310)",
+        "tonalRamp": [
+          "oklch(15% 0.035 310)",
+          "oklch(26% 0.035 310)",
+          "oklch(37% 0.035 310)",
+          "oklch(48% 0.035 310)",
+          "oklch(60% 0.035 310)",
+          "oklch(72% 0.035 310)",
+          "oklch(84% 0.035 310)",
+          "oklch(95% 0.035 310)"
+        ],
+        "lightTheme": "#ffffff"
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Superfície 2",
+        "canonical": "oklch(27.1% 0.034 311)",
+        "tonalRamp": [
+          "oklch(15% 0.035 311)",
+          "oklch(26% 0.035 311)",
+          "oklch(37% 0.035 311)",
+          "oklch(48% 0.035 311)",
+          "oklch(60% 0.035 311)",
+          "oklch(72% 0.035 311)",
+          "oklch(84% 0.035 311)",
+          "oklch(95% 0.035 311)"
+        ],
+        "lightTheme": "#fbeef4"
+      },
+      "surface-3": {
+        "role": "neutral",
+        "displayName": "Superfície 3",
+        "canonical": "oklch(31.2% 0.040 310)",
+        "tonalRamp": [
+          "oklch(15% 0.04 310)",
+          "oklch(26% 0.04 310)",
+          "oklch(37% 0.04 310)",
+          "oklch(48% 0.04 310)",
+          "oklch(60% 0.04 310)",
+          "oklch(72% 0.04 310)",
+          "oklch(84% 0.04 310)",
+          "oklch(95% 0.04 310)"
+        ],
+        "lightTheme": "#f4e1ea"
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Texto",
+        "canonical": "oklch(95.9% 0.013 341)",
+        "tonalRamp": [
+          "oklch(15% 0.02 341)",
+          "oklch(26% 0.02 341)",
+          "oklch(37% 0.02 341)",
+          "oklch(48% 0.02 341)",
+          "oklch(60% 0.02 341)",
+          "oklch(72% 0.02 341)",
+          "oklch(84% 0.02 341)",
+          "oklch(95% 0.02 341)"
+        ],
+        "lightTheme": "#2b1b26"
+      },
+      "text-2": {
+        "role": "neutral",
+        "displayName": "Texto 2",
+        "canonical": "oklch(79.6% 0.029 335)",
+        "tonalRamp": [
+          "oklch(15% 0.03 335)",
+          "oklch(26% 0.03 335)",
+          "oklch(37% 0.03 335)",
+          "oklch(48% 0.03 335)",
+          "oklch(60% 0.03 335)",
+          "oklch(72% 0.03 335)",
+          "oklch(84% 0.03 335)",
+          "oklch(95% 0.03 335)"
+        ],
+        "lightTheme": "#5e4757"
+      },
+      "text-3": {
+        "role": "neutral",
+        "displayName": "Texto 3",
+        "canonical": "oklch(66.5% 0.031 333)",
+        "tonalRamp": [
+          "oklch(15% 0.03 333)",
+          "oklch(26% 0.03 333)",
+          "oklch(37% 0.03 333)",
+          "oklch(48% 0.03 333)",
+          "oklch(60% 0.03 333)",
+          "oklch(72% 0.03 333)",
+          "oklch(84% 0.03 333)",
+          "oklch(95% 0.03 333)"
+        ],
+        "lightTheme": "#806878"
+      },
+      "rose": {
+        "role": "primary",
+        "displayName": "Rosa Ação",
+        "canonical": "oklch(77.9% 0.139 1)",
+        "tonalRamp": [
+          "oklch(15% 0.14 1)",
+          "oklch(26% 0.14 1)",
+          "oklch(37% 0.14 1)",
+          "oklch(48% 0.14 1)",
+          "oklch(60% 0.14 1)",
+          "oklch(72% 0.14 1)",
+          "oklch(84% 0.14 1)",
+          "oklch(95% 0.14 1)"
+        ],
+        "lightTheme": "#d23a6a"
+      },
+      "rose-strong": {
+        "role": "primary",
+        "displayName": "Rosa Pressionado",
+        "canonical": "oklch(72.8% 0.180 3)",
+        "tonalRamp": [
+          "oklch(15% 0.16 3)",
+          "oklch(26% 0.16 3)",
+          "oklch(37% 0.16 3)",
+          "oklch(48% 0.16 3)",
+          "oklch(60% 0.16 3)",
+          "oklch(72% 0.16 3)",
+          "oklch(84% 0.16 3)",
+          "oklch(95% 0.16 3)"
+        ],
+        "lightTheme": "#bf2d5b"
+      },
+      "rose-ink": {
+        "role": "primary",
+        "displayName": "Tinta Rosa",
+        "canonical": "oklch(24.0% 0.077 359)",
+        "tonalRamp": [
+          "oklch(15% 0.08 359)",
+          "oklch(26% 0.08 359)",
+          "oklch(37% 0.08 359)",
+          "oklch(48% 0.08 359)",
+          "oklch(60% 0.08 359)",
+          "oklch(72% 0.08 359)",
+          "oklch(84% 0.08 359)",
+          "oklch(95% 0.08 359)"
+        ],
+        "lightTheme": "#ffffff"
+      },
+      "lilac": {
+        "role": "secondary",
+        "displayName": "Lilás Informação",
+        "canonical": "oklch(79.3% 0.121 299)",
+        "tonalRamp": [
+          "oklch(15% 0.12 299)",
+          "oklch(26% 0.12 299)",
+          "oklch(37% 0.12 299)",
+          "oklch(48% 0.12 299)",
+          "oklch(60% 0.12 299)",
+          "oklch(72% 0.12 299)",
+          "oklch(84% 0.12 299)",
+          "oklch(95% 0.12 299)"
+        ],
+        "lightTheme": "#6c4bd1"
+      },
+      "peach": {
+        "role": "tertiary",
+        "displayName": "Pêssego Atenção",
+        "canonical": "oklch(83.0% 0.104 49)",
+        "tonalRamp": [
+          "oklch(15% 0.1 49)",
+          "oklch(26% 0.1 49)",
+          "oklch(37% 0.1 49)",
+          "oklch(48% 0.1 49)",
+          "oklch(60% 0.1 49)",
+          "oklch(72% 0.1 49)",
+          "oklch(84% 0.1 49)",
+          "oklch(95% 0.1 49)"
+        ],
+        "lightTheme": "#b9551f"
+      },
+      "mint": {
+        "role": "tertiary",
+        "displayName": "Menta Pronto",
+        "canonical": "oklch(83.6% 0.109 165)",
+        "tonalRamp": [
+          "oklch(15% 0.1 165)",
+          "oklch(26% 0.1 165)",
+          "oklch(37% 0.1 165)",
+          "oklch(48% 0.1 165)",
+          "oklch(60% 0.1 165)",
+          "oklch(72% 0.1 165)",
+          "oklch(84% 0.1 165)",
+          "oklch(95% 0.1 165)"
+        ],
+        "lightTheme": "#12805a"
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Perigo",
+        "canonical": "oklch(73.5% 0.163 22)",
+        "tonalRamp": [
+          "oklch(15% 0.15 22)",
+          "oklch(26% 0.15 22)",
+          "oklch(37% 0.15 22)",
+          "oklch(48% 0.15 22)",
+          "oklch(60% 0.15 22)",
+          "oklch(72% 0.15 22)",
+          "oklch(84% 0.15 22)",
+          "oklch(95% 0.15 22)"
+        ],
+        "lightTheme": "#c23434"
+      },
+      "thumb-blush": {
+        "role": "neutral",
+        "displayName": "Blush de Miniatura",
+        "canonical": "oklch(91.0% 0.018 340)",
+        "tonalRamp": [
+          "oklch(15% 0.02 340)",
+          "oklch(26% 0.02 340)",
+          "oklch(37% 0.02 340)",
+          "oklch(48% 0.02 340)",
+          "oklch(60% 0.02 340)",
+          "oklch(72% 0.02 340)",
+          "oklch(84% 0.02 340)",
+          "oklch(95% 0.02 340)"
+        ],
+        "lightTheme": "#ffffff"
+      },
+      "rose-soft": {
+        "role": "state-tint",
+        "displayName": "Rosa Véu",
+        "purpose": "fundo da série feita, botão soft"
+      },
+      "rose-line": {
+        "role": "state-tint",
+        "displayName": "Rosa Contorno",
+        "purpose": "anel do dia de hoje"
+      },
+      "lilac-soft": {
+        "role": "state-tint",
+        "displayName": "Lilás Véu",
+        "purpose": "fundo de badge/ícone lilás"
+      },
+      "peach-soft": {
+        "role": "state-tint",
+        "displayName": "Pêssego Véu",
+        "purpose": "fundo de aviso/PR"
+      },
+      "mint-soft": {
+        "role": "state-tint",
+        "displayName": "Menta Véu",
+        "purpose": "fundo de badge Feito"
+      },
+      "danger-soft": {
+        "role": "state-tint",
+        "displayName": "Perigo Véu",
+        "purpose": "botão danger"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "purpose": "divisórias"
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Forte",
+        "purpose": "bordas de hover, tracejado"
+      },
+      "day-1": {
+        "role": "categorical",
+        "displayName": "Dia A",
+        "purpose": "Só no DayBadge; cicla a cada 6 dias."
+      },
+      "day-2": {
+        "role": "categorical",
+        "displayName": "Dia B",
+        "purpose": "Só no DayBadge; cicla a cada 6 dias."
+      },
+      "day-3": {
+        "role": "categorical",
+        "displayName": "Dia C",
+        "purpose": "Só no DayBadge; cicla a cada 6 dias."
+      },
+      "day-4": {
+        "role": "categorical",
+        "displayName": "Dia D",
+        "purpose": "Só no DayBadge; cicla a cada 6 dias."
+      },
+      "day-5": {
+        "role": "categorical",
+        "displayName": "Dia E",
+        "purpose": "Só no DayBadge; cicla a cada 6 dias."
+      },
+      "day-6": {
+        "role": "categorical",
+        "displayName": "Dia F",
+        "purpose": "Só no DayBadge; cicla a cada 6 dias."
+      },
+      "water": {
+        "role": "state",
+        "displayName": "Azul Água",
+        "canonical": "oklch(81% 0.09 245)",
+        "tonalRamp": [
+          "oklch(15% 0.09 245)",
+          "oklch(26% 0.09 245)",
+          "oklch(37% 0.09 245)",
+          "oklch(48% 0.09 245)",
+          "oklch(60% 0.09 245)",
+          "oklch(72% 0.09 245)",
+          "oklch(84% 0.09 245)",
+          "oklch(95% 0.09 245)"
+        ],
+        "lightTheme": "#1f6fbf",
+        "usage": "Fixed role: hydration only (water goal card, /agua page, bottle, quick-add, 7-day chart)."
+      },
+      "water-soft": {
+        "role": "state",
+        "displayName": "Água Suave",
+        "canonical": "rgb(143 200 255 / 0.14)",
+        "lightTheme": "rgb(31 111 191 / 0.1)",
+        "usage": "Background for water quick-add buttons and icon circles."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Título de página de nível superior e saudação."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Título com voltar; título do cartão-herói."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Títulos de Section, EmptyState e sheets."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Stat, cronômetro, resumo; sempre tabular."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido, inputs (16px), botões md."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Tamanho dominante da UI."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Rótulos de Stat, dicas, badges."
+      },
+      "label-xs": {
+        "displayName": "Label XS",
+        "purpose": "Abas, cabeçalho da tabela de séries, eixos."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-1",
+        "value": "0 1px 2px rgb(0 0 0 / 0.3), 0 4px 16px rgb(0 0 0 / 0.18)",
+        "light": "0 1px 2px rgb(74 27 52 / 0.06), 0 4px 14px rgb(74 27 52 / 0.06)",
+        "purpose": "Opção selecionada do Segmented."
+      },
+      {
+        "name": "shadow-2",
+        "value": "0 8px 28px rgb(0 0 0 / 0.45), 0 2px 6px rgb(0 0 0 / 0.3)",
+        "light": "0 10px 30px rgb(74 27 52 / 0.14), 0 2px 6px rgb(74 27 52 / 0.08)",
+        "purpose": "Camadas flutuantes: sheet, dock de descanso, toast, tooltip."
+      },
+      {
+        "name": "shadow-rose",
+        "value": "0 6px 22px rgb(255 111 156 / 0.32)",
+        "light": "0 6px 20px rgb(214 65 111 / 0.28)",
+        "purpose": "Brilho da ação primária cheia (botão, FAB, pílula de treino ativo)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Curva única para todas as animações de estado."
+      },
+      {
+        "name": "anim-pop",
+        "value": "gf-pop 280ms var(--ease-out)",
+        "purpose": "Check de série concluída (0.82 → 1.1 → 1)."
+      },
+      {
+        "name": "anim-rise",
+        "value": "gf-rise 220ms var(--ease-out) both",
+        "purpose": "Dock de descanso, toast, pílula de treino ativo entrando."
+      },
+      {
+        "name": "anim-sheet",
+        "value": "gf-sheet 280ms var(--ease-out)",
+        "purpose": "Sheet subindo do rodapé."
+      },
+      {
+        "name": "transition-fast",
+        "value": "150ms",
+        "purpose": "Hover/press de cor e escala (active:scale .97)."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "1ms",
+        "purpose": "prefers-reduced-motion zera animações e transições."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px",
+        "purpose": "Sheet vira diálogo centrado."
+      },
+      {
+        "name": "column",
+        "value": "36rem",
+        "purpose": "Largura máxima da coluna do app (max-w-xl)."
+      }
+    ],
+    "layoutTokens": [
+      {
+        "name": "nav-h",
+        "value": "68px"
+      }
+    ],
+    "themes": {
+      "default": "dark",
+      "switch": "<html data-theme=\"dark|light|system\">",
+      "storageKey": "gafit-theme"
+    }
+  },
+  "components": [
+    {
+      "name": "Botão primário",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "A única ação rosa por contexto.",
+      "html": "<button class=\"ds-btn-primary\">Começar Treino A</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 20px;border:0;border-radius:9999px;background:var(--rose,#ff8fb1);color:var(--rose-ink,#3a0a1e);font:600 1rem/1.5rem 'Figtree Variable',system-ui,sans-serif;box-shadow:var(--shadow-rose,0 6px 22px rgb(255 111 156 / .32));transition:background-color .15s,transform .15s;cursor:pointer}.ds-btn-primary:hover{background:var(--rose-strong,#ff6f9c)}.ds-btn-primary:active{transform:scale(.97)}.ds-btn-primary:focus-visible{outline:2px solid var(--rose,#ff8fb1);outline-offset:2px}"
+    },
+    {
+      "name": "Botão secundário",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ações neutras em sheets e menus.",
+      "html": "<button class=\"ds-btn-secondary\">Trocar</button>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 20px;border:0;border-radius:9999px;background:var(--surface-2,#2c2233);color:var(--text,#f8eef4);font:600 1rem/1.5rem 'Figtree Variable',system-ui,sans-serif;transition:background-color .15s,transform .15s;cursor:pointer}.ds-btn-secondary:hover{background:var(--surface-3,#372b40)}.ds-btn-secondary:active{transform:scale(.97)}.ds-btn-secondary:focus-visible{outline:2px solid var(--rose,#ff8fb1);outline-offset:2px}"
+    },
+    {
+      "name": "Botão soft",
+      "kind": "button",
+      "refersTo": "button-soft",
+      "description": "Ação relacionada à primária, sem competir com ela.",
+      "html": "<button class=\"ds-btn-soft\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M5 12h14M12 5v14\"/></svg>Exercício</button>",
+      "css": ".ds-btn-soft{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:56px;padding:0 24px;border:0;border-radius:9999px;background:var(--rose-soft,rgb(255 143 177 / .14));color:var(--rose,#ff8fb1);font:600 1.1875rem/1.6rem 'Figtree Variable',system-ui,sans-serif;transition:opacity .15s,transform .15s;cursor:pointer}.ds-btn-soft:hover{opacity:.8}.ds-btn-soft:active{transform:scale(.97)}.ds-btn-soft:focus-visible{outline:2px solid var(--rose,#ff8fb1);outline-offset:2px}"
+    },
+    {
+      "name": "Botão danger",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Destrutivo, isolado no fim de um sheet.",
+      "html": "<button class=\"ds-btn-danger\">Descartar treino</button>",
+      "css": ".ds-btn-danger{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 20px;border:0;border-radius:9999px;background:var(--danger-soft,rgb(255 122 122 / .14));color:var(--danger,#ff7a7a);font:600 1rem/1.5rem 'Figtree Variable',system-ui,sans-serif;transition:background-color .15s,transform .15s;cursor:pointer}.ds-btn-danger:hover{background:rgb(255 122 122 / .2)}.ds-btn-danger:active{transform:scale(.97)}.ds-btn-danger:focus-visible{outline:2px solid var(--rose,#ff8fb1);outline-offset:2px}"
+    },
+    {
+      "name": "Campo de texto",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Input com rótulo e dica, via FieldWrap.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Peso corporal</span><span class=\"ds-field-wrap\"><input class=\"ds-input\" placeholder=\"62,5\"><span class=\"ds-field-suffix\">kg</span></span></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:6px;font-family:'Figtree Variable',system-ui,sans-serif}.ds-field-label{padding:0 4px;font-size:.875rem;font-weight:600;color:var(--text-2,#c9b6c4)}.ds-field-wrap{position:relative;display:block}.ds-input{width:100%;height:48px;padding:0 48px 0 16px;border:1px solid var(--line,rgb(255 236 246 / .08));border-radius:12px;background:var(--surface-2,#2c2233);color:var(--text,#f8eef4);font:400 1rem 'Figtree Variable',system-ui,sans-serif;caret-color:var(--rose,#ff8fb1);transition:border-color .15s}.ds-input::placeholder{color:var(--text-3,#a08d9c)}.ds-input:hover{border-color:var(--line-strong,rgb(255 236 246 / .16))}.ds-input:focus{outline:none;border-color:var(--rose,#ff8fb1)}.ds-field-suffix{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:.875rem;color:var(--text-3,#a08d9c)}"
+    },
+    {
+      "name": "Chips de filtro",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Filtros em linha; ativo em rosa cheio.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"true\">Todos</button><button class=\"ds-chip\" aria-pressed=\"false\">Peito</button><button class=\"ds-chip\" aria-pressed=\"false\">Costas</button></div>",
+      "css": ".ds-chips{display:flex;gap:8px}.ds-chip{height:36px;padding:0 14px;border:1px solid var(--line,rgb(255 236 246 / .08));border-radius:9999px;background:var(--surface,#221a28);color:var(--text-2,#c9b6c4);font:600 .875rem 'Figtree Variable',system-ui,sans-serif;transition:color .15s,border-color .15s;cursor:pointer}.ds-chip:hover{border-color:var(--line-strong,rgb(255 236 246 / .16));color:var(--text,#f8eef4)}.ds-chip[aria-pressed=true]{border-color:transparent;background:var(--rose,#ff8fb1);color:var(--rose-ink,#3a0a1e)}.ds-chip:focus-visible{outline:2px solid var(--rose,#ff8fb1);outline-offset:2px}"
+    },
+    {
+      "name": "Navegação inferior",
+      "kind": "nav",
+      "refersTo": "nav-tab-active",
+      "description": "5 abas com FAB rosa Treinar no centro.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-tab\" aria-current=\"page\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z\"/></svg>Início</a><a class=\"ds-tab\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><rect x=\"6\" y=\"4\" width=\"12\" height=\"17\" rx=\"2\"/><path d=\"M9 10h6M9 14h6\"/></svg>Fichas</a><a class=\"ds-tab\"><span class=\"ds-fab\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"><path d=\"M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12\"/></svg></span>Treinar</a><a class=\"ds-tab\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M3 3v18h18M7 15l4-4 3 3 5-6\"/></svg>Progresso</a><a class=\"ds-tab\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 21a8 8 0 0 1 16 0\"/></svg>Perfil</a></nav>",
+      "css": ".ds-nav{display:flex;height:68px;padding:0 8px;border-top:1px solid var(--line,rgb(255 236 246 / .08));background:var(--bg-elev,#1c1520)}.ds-tab{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font:600 11px 'Figtree Variable',system-ui,sans-serif;color:var(--text-3,#a08d9c);text-decoration:none;cursor:pointer;transition:color .15s}.ds-tab:hover{color:var(--text-2,#c9b6c4)}.ds-tab[aria-current=page]{color:var(--rose,#ff8fb1)}.ds-fab{margin-top:-24px;display:flex;width:56px;height:56px;align-items:center;justify-content:center;border-radius:9999px;background:var(--rose,#ff8fb1);color:var(--rose-ink,#3a0a1e);box-shadow:0 0 0 4px var(--bg,#16101a),var(--shadow-rose,0 6px 22px rgb(255 111 156 / .32))}"
+    },
+    {
+      "name": "Cartão do treino de hoje",
+      "kind": "card",
+      "refersTo": "card-hero",
+      "description": "Card surface 22px com DayBadge, meta e CTA primário.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-head\"><span class=\"ds-day\">B</span><div><h2 class=\"ds-card-title\">Costas e bíceps</h2><p class=\"ds-card-meta\"><b>Hoje</b> · 6 exercícios · ~55 min</p></div></div><button class=\"ds-card-cta\">Começar Treino B</button></div>",
+      "css": ".ds-card{padding:20px;border-radius:22px;background:var(--surface,#221a28);color:var(--text,#f8eef4);font-family:'Figtree Variable',system-ui,sans-serif}.ds-card-head{display:flex;gap:16px;align-items:flex-start}.ds-day{display:inline-flex;width:56px;height:56px;flex-shrink:0;align-items:center;justify-content:center;border-radius:9999px;font:800 1.75rem 'Bricolage Grotesque Variable',sans-serif;color:var(--day-2,#c6aaff);background:color-mix(in srgb,var(--day-2,#c6aaff) 18%,transparent)}.ds-card-title{margin:0;font:800 1.75rem/2.1rem 'Bricolage Grotesque Variable',sans-serif;letter-spacing:-.02em}.ds-card-meta{margin:6px 0 0;font-size:.875rem;color:var(--text-2,#c9b6c4)}.ds-card-meta b{color:var(--text,#f8eef4)}.ds-card-cta{margin-top:20px;width:100%;height:56px;border:0;border-radius:9999px;background:var(--rose,#ff8fb1);color:var(--rose-ink,#3a0a1e);font:600 1.1875rem 'Figtree Variable',system-ui,sans-serif;box-shadow:var(--shadow-rose,0 6px 22px rgb(255 111 156 / .32));cursor:pointer;transition:background-color .15s}.ds-card-cta:hover{background:var(--rose-strong,#ff6f9c)}.ds-card-cta:focus-visible{outline:2px solid var(--rose,#ff8fb1);outline-offset:2px}"
+    },
+    {
+      "name": "Linha de série",
+      "kind": "custom",
+      "refersTo": "set-row-done",
+      "description": "Unidade do produto: tipo, anterior, kg, reps, check; feita = véu rosa + check cheio.",
+      "html": "<div class=\"ds-sets\"><div class=\"ds-set is-done\"><span class=\"ds-set-n\">1</span><span class=\"ds-set-prev\">42,5 × 12</span><input class=\"ds-set-in\" value=\"45\"><input class=\"ds-set-in\" value=\"12\"><button class=\"ds-set-check\" aria-pressed=\"true\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></button></div><div class=\"ds-set\"><span class=\"ds-set-n\">2</span><span class=\"ds-set-prev\">42,5 × 12</span><input class=\"ds-set-in\" placeholder=\"45\"><input class=\"ds-set-in\" placeholder=\"12\"><button class=\"ds-set-check\" aria-pressed=\"false\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></button></div></div>",
+      "css": ".ds-sets{padding:8px;border-radius:22px;background:var(--surface,#221a28);font-family:'Figtree Variable',system-ui,sans-serif}.ds-set{display:grid;grid-template-columns:2.5rem 1fr 4.75rem 4.25rem 3.25rem;gap:6px;align-items:center;padding:4px;border-radius:16px;transition:background-color .2s}.ds-set.is-done{background:var(--rose-soft,rgb(255 143 177 / .14))}.ds-set-n{justify-self:center;display:flex;width:32px;height:32px;align-items:center;justify-content:center;border-radius:9999px;background:var(--surface-2,#2c2233);color:var(--text-2,#c9b6c4);font:700 .875rem 'Bricolage Grotesque Variable',sans-serif;font-variant-numeric:tabular-nums}.ds-set-prev{font-size:.875rem;color:var(--text-3,#a08d9c);font-variant-numeric:tabular-nums}.ds-set-in{height:48px;width:100%;border:0;border-radius:12px;background:var(--surface-2,#2c2233);color:var(--text,#f8eef4);text-align:center;font:700 1.1875rem 'Figtree Variable',system-ui,sans-serif;font-variant-numeric:tabular-nums}.ds-set-in::placeholder{color:var(--text-3,#a08d9c);font-weight:600}.ds-set-in:focus{outline:2px solid var(--rose,#ff8fb1)}.is-done .ds-set-in{background:transparent}.ds-set-check{display:flex;width:48px;height:48px;align-items:center;justify-content:center;border:0;border-radius:12px;background:var(--surface-2,#2c2233);color:var(--text-3,#a08d9c);cursor:pointer;transition:background-color .15s,color .15s}.ds-set-check:hover{color:var(--text,#f8eef4)}.ds-set-check[aria-pressed=true]{background:var(--rose,#ff8fb1);color:var(--rose-ink,#3a0a1e)}.ds-set-check:focus-visible{outline:2px solid var(--rose,#ff8fb1);outline-offset:2px}"
+    },
+    {
+      "name": "Dock de descanso",
+      "kind": "custom",
+      "refersTo": "rest-dock",
+      "description": "Cronômetro de descanso fixo no rodapé da sessão.",
+      "html": "<div class=\"ds-rest\"><div class=\"ds-rest-fill\" style=\"width:40%\"></div><div class=\"ds-rest-row\"><div class=\"ds-rest-txt\"><p class=\"ds-rest-label\">Descanso · Face pull</p><p class=\"ds-rest-time\">0:59</p></div><button class=\"ds-rest-adj\">−15</button><button class=\"ds-rest-adj\">+15</button><button class=\"ds-rest-skip\" aria-label=\"Pular descanso\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m5 4 10 8-10 8z\"/><path d=\"M19 5v14\"/></svg></button></div></div>",
+      "css": ".ds-rest{position:relative;overflow:hidden;border-radius:28px;background:var(--surface-3,#372b40);color:var(--text,#f8eef4);box-shadow:var(--shadow-2,0 8px 28px rgb(0 0 0 / .45),0 2px 6px rgb(0 0 0 / .3));font-family:'Figtree Variable',system-ui,sans-serif}.ds-rest-fill{position:absolute;inset:0 auto 0 0;background:var(--rose-soft,rgb(255 143 177 / .14));transition:width .3s linear}.ds-rest-row{position:relative;display:flex;align-items:center;gap:8px;padding:8px 8px 8px 16px}.ds-rest-txt{flex:1;min-width:0}.ds-rest-label{margin:0;font-size:.75rem;font-weight:600;color:var(--text-3,#a08d9c);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ds-rest-time{margin:0;font:800 2.25rem/1.25 'Bricolage Grotesque Variable',sans-serif;font-variant-numeric:tabular-nums}.ds-rest-adj{height:48px;padding:0 12px;border:0;border-radius:9999px;background:var(--surface-2,#2c2233);color:var(--text,#f8eef4);font:700 .875rem 'Figtree Variable',system-ui,sans-serif;cursor:pointer}.ds-rest-adj:hover{background:var(--surface,#221a28)}.ds-rest-skip{display:flex;width:48px;height:48px;align-items:center;justify-content:center;border:0;border-radius:9999px;background:var(--rose,#ff8fb1);color:var(--rose-ink,#3a0a1e);cursor:pointer}.ds-rest-skip:hover{background:var(--rose-strong,#ff6f9c)}.ds-rest-adj:focus-visible,.ds-rest-skip:focus-visible{outline:2px solid var(--rose,#ff8fb1);outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "O Caderno de Treino à Noite",
+    "overview": "Gafit é o rastreador de treino canônico da categoria (dark-first, cartões arredondados, um único acento vibrante, na família de Befit e Hevy) tocado sem ironia e reafinado para o quente e feminino. O chão é uma noite ameixa (plum-night), não preto neutro; o único acento de ação é rosa; lilás carrega informação e navegação secundária; pêssego e menta são estados (atenção / pronto). Nada de gradientes decorativos, glassmorphism ou ilustração: o calor vem do matiz do neutro e do rosa, não de efeitos.\n\nA densidade é de ferramenta de academia: o celular numa mão, entre séries, com dedo suado. Isso define tudo: alvos de toque de 44 a 56 px, números grandes em Bricolage Grotesque com algarismos tabulares, uma ação primária rosa por contexto, e a linha de série como unidade do sistema. A tela de sessão (`session-view.tsx`) é a superfície-assinatura; todas as outras telas são variações calmas de \"cabeçalho de página, seções com título, cartões `surface` em pilha\".\n\nProfundidade vem de camadas tonais (`bg` → `surface` → `surface-2` → `surface-3`), não de bordas. Sombras só aparecem em coisas que flutuam (sheet, dock de descanso, toast, tooltip) e no brilho rosa da ação primária.",
+    "keyCharacteristics": [
+      "Chão ameixa escuro com superfícies empilhadas por tom; bordas só como hairline de separação.",
+      "Rosa é a única cor de ação e a cor de \"feito\"; lilás = informação/links; pêssego = atenção/PR; menta = pronto/sucesso.",
+      "Bricolage Grotesque para títulos e números; Figtree para toda a UI.",
+      "Formas generosas: cartões 22 px, sheets e dock 28 px, botões e chips em pílula.",
+      "Movimento só em mudança de estado (pop no check, rise no dock, sheet subindo), anulado em `prefers-reduced-motion`.",
+      "Dois temas com os mesmos nomes de token; o claro é um rosa-papel com rosa mais profundo para contraste."
+    ],
+    "rules": [
+      {
+        "name": "The One Rose Rule",
+        "body": "Rosa cheio significa \"faça isto\" ou \"feito\". Uma ação primária rosa por contexto (cartão, sheet, cabeçalho); todo o resto é `secondary`, `soft` ou `ghost`. Se dois botões rosa cheios aparecem lado a lado, um deles está errado.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fixed Roles Rule",
+        "body": "Lilás informa, pêssego alerta, menta confirma, vermelho destrói. Uma cor de estado nunca troca de papel entre telas, e nenhuma delas vira cor de ação.",
+        "section": "colors"
+      },
+      {
+        "name": "The Soft Twin Rule",
+        "body": "Todo fundo colorido é a versão `-soft` da cor com o texto na versão cheia (`bg-mint-soft text-mint`). Cor cheia como fundo é reservada ao rosa (ação/feito) e aos toasts.",
+        "section": "colors"
+      },
+      {
+        "name": "The Token-Only Rule",
+        "body": "Nenhum hex em componente. Cor nova = variável nova em `:root` + os dois blocos claros + linha em `@theme inline`.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numbers Are Display Rule",
+        "body": "Todo número que o usuário lê de longe (carga, reps, tempo, contagem, volume) usa `tabular`; os que são o conteúdo principal do bloco usam também `font-display`. Inputs de série usam Figtree bold 1.1875rem tabular: são campos, não títulos.",
+        "section": "typography"
+      },
+      {
+        "name": "The Names Stay Sans Rule",
+        "body": "Nomes de exercício são conteúdo, não marca: no bloco de exercício o `h3` volta para Figtree bold 17 px, `tracking-normal`. Bricolage fica para títulos de estrutura e números.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tonal Step Rule",
+        "body": "Para elevar, suba um degrau de superfície (`surface` → `surface-2` → `surface-3`); não adicione borda nem sombra. Controles dentro de um cartão ficam sempre um degrau acima do cartão.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Only Floaters Cast Rule",
+        "body": "Sombra 2 é exclusiva de camadas sobrepostas (sheet, dock, toast, tooltip). Brilho rosa é exclusivo da ação primária cheia.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Nested Radius Rule",
+        "body": "Raio diminui para dentro: cartão 22 → linha 16 → controle 12. Nunca um filho mais arredondado que o pai (exceto pílulas).",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** usar só classes do tema (`bg-surface`, `text-text-2`, `bg-rose-soft`, `rounded-lg`); todo valor de cor vem de `globals.css`.",
+      "**Do** manter uma única ação rosa cheia por contexto (The One Rose Rule) e usar `soft`/`secondary`/`ghost` para o resto.",
+      "**Do** elevar por degrau tonal (`surface` → `surface-2` → `surface-3`) e reservar sombra 2 para sheet, dock, toast e tooltip.",
+      "**Do** manter alvos de toque ≥ 44 px (botões md 48, linha de série 48, FAB 56) e inputs com 16 px de texto.",
+      "**Do** escrever todo número legível com `tabular`, e os números-protagonistas em `font-display`.",
+      "**Do** usar o par `-soft` de fundo + cor cheia de texto para badges, avisos e ícones em círculo.",
+      "**Do** testar toda tela nova nos dois temas (`data-theme=\"light\"`) e com `prefers-reduced-motion`.",
+      "**Do** escrever a interface em português brasileiro informal, tratando por \"você\", com vocabulário de academia (série, carga, ficha, treino A)."
+    ],
+    "donts": [
+      "**Don't** colocar hex cru, `text-white` ou cores do Tailwind padrão (`bg-pink-500`) em componentes.",
+      "**Don't** usar lilás, pêssego, menta ou vermelho como cor de ação, nem trocar seus papéis entre telas.",
+      "**Don't** usar as cores `day-*` fora do `DayBadge`.",
+      "**Don't** adicionar bordas ou sombras a cartões para separá-los; espaço e degrau tonal já fazem isso.",
+      "**Don't** usar Bricolage em texto corrido, rótulos ou nomes de exercício; nem Figtree em números-protagonistas.",
+      "**Don't** criar raios fora da escala (12/16/22/28/pílula) nem aninhar um filho mais arredondado que o pai.",
+      "**Don't** adicionar gradientes decorativos, glassmorphism em cartões, ilustrações ou animações de entrada de página; o blur é só da navegação e do cabeçalho fixo.",
+      "**Don't** criar feed social, ranking ou pressão gamificada na UI; progresso é pessoal."
+    ]
+  }
+}
