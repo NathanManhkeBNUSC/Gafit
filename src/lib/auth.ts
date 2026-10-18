@@ -5,14 +5,24 @@ import bcrypt from "bcryptjs";
 import { eq } from "drizzle-orm";
 import { getDb, schema } from "@/lib/db";
 import type { UserDTO } from "@/lib/types";
+import { HttpError } from "@/lib/http";
 
 export const SESSION_COOKIE = "gafit_session";
 const MAX_AGE = 60 * 60 * 24 * 60; // 60 days
 
 function secret() {
   const s = process.env.AUTH_SECRET;
-  if (!s || s.length < 16) throw new Error("AUTH_SECRET ausente ou curto demais (mínimo 16 caracteres).");
+  if (!s || s.length < 16)
+    throw new HttpError(
+      500,
+      "Configuração do servidor incompleta: AUTH_SECRET ausente ou com menos de 16 caracteres. Adicione no .env.local (ou nas variáveis da Vercel) e reinicie o servidor.",
+    );
   return new TextEncoder().encode(s);
+}
+
+/** Fails fast (before touching the database) when sessions can't be created. */
+export function assertAuthConfigured() {
+  secret();
 }
 
 export async function hashPassword(pw: string) {

@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { eq } from "drizzle-orm";
 import { getDb, schema } from "@/lib/db";
-import { createSession, hashPassword, toUserDTO } from "@/lib/auth";
+import { assertAuthConfigured, createSession, hashPassword, toUserDTO } from "@/lib/auth";
 import { HttpError, parseBody, route } from "@/lib/http";
 import { newId } from "@/lib/ids";
 
@@ -13,6 +13,7 @@ const body = z.object({
 });
 
 export const POST = route(async (req) => {
+  assertAuthConfigured();
   const input = await parseBody(req, body);
   const required = process.env.INVITE_CODE?.trim();
   if (required && input.invite?.trim().toLowerCase() !== required.toLowerCase())

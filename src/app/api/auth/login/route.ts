@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { eq } from "drizzle-orm";
 import { getDb, schema } from "@/lib/db";
-import { createSession, toUserDTO, verifyPassword } from "@/lib/auth";
+import { assertAuthConfigured, createSession, toUserDTO, verifyPassword } from "@/lib/auth";
 import { HttpError, parseBody, route } from "@/lib/http";
 
 const body = z.object({
@@ -10,6 +10,7 @@ const body = z.object({
 });
 
 export const POST = route(async (req) => {
+  assertAuthConfigured();
   const input = await parseBody(req, body);
   const db = await getDb();
   const [user] = await db.select().from(schema.users).where(eq(schema.users.email, input.email)).limit(1);

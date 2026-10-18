@@ -2,6 +2,7 @@ import "server-only";
 import { neon } from "@neondatabase/serverless";
 import { drizzle as drizzleNeon, type NeonHttpDatabase } from "drizzle-orm/neon-http";
 import * as schema from "./schema";
+import { HttpError } from "@/lib/http";
 
 export type DB = NeonHttpDatabase<typeof schema>;
 
@@ -17,7 +18,8 @@ declare global {
  * are applied automatically in that mode.
  */
 async function create(): Promise<DB> {
-  if (!url) throw new Error("DATABASE_URL não configurada. Veja o README.");
+  if (!url)
+    throw new HttpError(500, "Configuração do servidor incompleta: DATABASE_URL não configurada. Adicione no .env.local (ou nas variáveis da Vercel) e reinicie o servidor.");
   if (url.startsWith("pglite:")) {
     const { PGlite } = await import("@electric-sql/pglite");
     const { drizzle } = await import("drizzle-orm/pglite");
@@ -31,7 +33,11 @@ async function create(): Promise<DB> {
 }
 
 export function getDb(): Promise<DB> {
-  if (!globalThis.__gafitDb) globalThis.__gafitDb = create();
+  if (!globalThis.__gafitDb) {
+    globalThis.__gafitDb = create();
+    // Don't cache a failed setup: fixing the env and retrying should work without a restart.
+    globalThis.__gafitDb.catch(() => (globalThis.__gafitDb = undefined));
+  }
   return globalThis.__gafitDb;
 }
 

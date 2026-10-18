@@ -39,7 +39,9 @@ export function route<C = unknown>(fn: Handler<C>): Handler<C> {
         return Response.json({ error: first?.message ?? "Dados inválidos.", issues: e.issues }, { status: 400 });
       }
       console.error(e);
-      return Response.json({ error: "Algo deu errado no servidor. Tente de novo." }, { status: 500 });
+      // In development show the real cause on screen; in production keep internals private.
+      const detail = process.env.NODE_ENV !== "production" && e instanceof Error ? ` (${e.message})` : "";
+      return Response.json({ error: `Algo deu errado no servidor. Tente de novo.${detail}` }, { status: 500 });
     }
   };
 }
